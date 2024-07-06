@@ -2,7 +2,7 @@ import React , { BrowserRouter as Router , Routes , Route} from 'react-router-do
 import {FirstPage} from './firstpage.tsx';
 import { SecondPage } from './secondpage.tsx';
 
-export const Routers: React.FC = () => {
+export const Routers = () => {
   return (
     <Router>
       <Routes>
