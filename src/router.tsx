@@ -1,8 +1,12 @@
-import React , { BrowserRouter as Router , Routes , Route} from 'react-router-dom';
+import { BrowserRouter as Router , Routes , Route} from 'react-router-dom';
 import {FirstPage} from './firstpage.tsx';
 import { SecondPage } from './secondpage.tsx';
 
-export const Routers = () => {
+type MyComponentProps = {
+  children: React.ReactNode;
+};
+
+export const Routers : React.FC<MyComponentProps> = () => {
   return (
     <Router>
       <Routes>
